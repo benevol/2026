@@ -1,6 +1,1 @@
-<HTML>
-<HEAD></HEAD>
-<BODY>
-<TITLE>BENEVOL 2026 website</TITLE>
-</BODY>
-</HTML>
+# BENEVOL 2026 website
