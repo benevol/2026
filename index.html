@@ -11,6 +11,7 @@
         rel="stylesheet" type="text/css">
   <link href="css/creative.css" rel="stylesheet">
   <link href="css/mundane.css" rel="stylesheet">
+  <link href="css/modal.css" rel="stylesheet">
 </head>
 <body id="page-top">
 <nav class="navbar navbar-expand-lg" id="mainNav">
@@ -60,6 +61,155 @@
     </div>
   </div>
 </header>
+<section id="keynotes">
+  <div class="container">
+    <h2>Keynotes</h2>
+    <hr>
+    <div class="col">
+      <div class="row">
+        <div class="card">
+          <a href="https://example.com" target="_blank">
+            <img class="pic" src="img/juandelara.jpeg" alt="Juan de Lara Picture">
+            <h5>Juan de Lara</h5>
+            <p class="person">
+              <b>Keynote Speaker</b><br>
+              Universidad Autonoma de Madrid<br>
+              Spain
+            </p>
+            <a data-toggle="modal" href="#firstKeynote">
+                <p class="font-weight-light mt-3 mb-0 text-danger">
+                    <u><i>Automation in Software Development: From Models to Agents (and Back)</i></u>
+                </p>
+            </a>
+          </a>
+        </div>
+        <div class="card">
+          <a href="https://tdegueul.github.io/" target="_blank">
+            <img class="pic" src="img/tdegueul.jpg" alt="Thomas Degueule Picture">
+            <h5>Thomas Degueule</h5>
+            <p class="person">
+              <b>Keynote Speaker</b><br>
+              CNRS, Université de Bordeaux<br>
+              France
+            </p>
+            <a data-toggle="modal" href="#secondKeynote">
+                <p class="font-weight-light mt-3 mb-0 text-danger">
+                    <u><i>Software Ecosystems & Libraries: Evolution, Compatibility, Tooling</i></u>
+                </p>
+            </a>
+          </a>
+        </div>
+      </div>
+      </div>
+    </div>
+    <!-- Keynote Modal: Juan de Lara -->
+    <div class="modal fade" id="firstKeynote" tabindex="-1" role="dialog" aria-labelledby="firstKeynoteTitle"
+    aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+            <h5 class="modal-title" id="firstKeynoteTitle">Automation in Software Development: From Models to Agents (and Back)</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+            </button>
+            </div>
+            <div class="modal-body">
+            <h4>Abstract</h4>
+            <p class="text-justify">
+              Since its origins, software engineering has pursued higher levels of
+              productivity through increased abstraction and automation. This has
+              often been achieved by introducing more expressive specification
+              mechanisms (e.g., moving from assembly to high-level programming
+              languages) and by automating development tasks through transformation
+              techniques such as code generation.
+            </p><p class="text-justify">
+              Recent advances in generative artificial intelligence are reshaping
+              software development through intelligent assistants (such as Copilot)
+              and agentic approaches (such as Claude Code), where natural language is
+              used as an interaction and specification medium, and LLMs automate
+              increasingly complex development tasks. However, this new paradigm also
+              introduces new challenges: natural language specifications may become
+              lengthy and hard to assess, being inherently ambiguous; while LLM-based
+              automation may introduce non-determinism, implicit requirement
+              inference, hidden assumptions, and hallucinated artifacts.
+            </p><p class="text-justify"></p>
+              In this talk, I will reflect on how abstraction and automation have
+              served the goal of achieving higher productivity in software
+              development. First, I will review approaches founded on explicit
+              domain-specific abstractions and engineered transformations:
+              model-driven engineering, domain-specific languages and low-code
+              platforms. Then, I will analyse LLM-based approaches -- from assistants
+              to autonomous agents and spec-driven development -- based on natural
+              language and generative AI. I will argue that the future of software
+              automation should not necessarily be seen as a replacement of explicit
+              models by natural language and engineered transformations by LLM-based
+              solutions (i.e., going from models to agents). Instead, I will discuss
+              the benefits of combining both approaches and propose possible
+              directions for their integration (i.e., bringing back the models).</p>
+            <h4>Biography</h4>
+            <p class="text-justify"> Juan de Lara is full professor at the computer science department
+            of the Universidad Autónoma of Madrid (Spain), where he leads the
+            modelling and software engineering research team (<a href="https://miso.es/" target="_blank">https://miso.es/</a>)
+            together with Esther Guerra. His main research interests are in
+            automated software engineering, model-driven development, low-code
+            development, domain-specific languages and language engineering,
+            conversational agents and intelligent assistants. This research has led
+            to building many practical tools including Asymob, AToM3, metaDepth,
+            merlin, Chatbot dōjō and Gotten – and the publication of more than 270
+            papers in international journals and conferences. He has been the PC
+            co-chair of several conferences within his research areas, like MODELS,
+            SLE, ICGT, ICMT and FASE, he is on the editorial board of the SoSyM
+            journal (Springer), and has been involved in the organisation of
+            workshops on topics like flexible modelling, multi-level modelling and
+            low-code development.</p>
+            </div>
+        </div>
+        </div>
+    </div>
+    <!-- Keynote Modal: Thomas Degueule -->
+    <div class="modal fade" id="secondKeynote" tabindex="-1" role="dialog" aria-labelledby="secondKeynoteTitle"
+    aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+            <h5 class="modal-title" id="secondKeynoteTitle">Software Ecosystems & Libraries: Evolution, Compatibility, Tooling</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+            </button>
+            </div>
+            <div class="modal-body">
+            <h4>Abstract</h4>
+            <p class="text-justify">
+              Modern software development heavily relies on third-party libraries
+              distributed through large software ecosystems. Like any software
+              artifact, libraries continuously evolve to introduce new features, fix
+              bugs, and address security vulnerabilities. Keeping dependencies up to
+              date is therefore essential to benefit from these improvements and avoid
+              technical debt and security risks. As libraries evolve, they may break
+              the contract previously established by introducing syntactic or semantic
+              changes. Such breaking changes often discourage clients from upgrading
+              their dependencies, increasing maintenance costs, raising security
+              concerns, and making future upgrades even harder.
+            </p><p class="text-justify">
+              In this talk, we will discuss the central role of software ecosystems
+              and libraries in modern software engineering, and the challenges raised
+              by their inevitable evolution. We will explore API design and usage
+              practices, examine how maintainers evolve their libraries and how
+              frequently breaking changes occur, and present techniques to
+              automatically detect and remediate syntactic and semantic compatibility
+              issues. We will also show how research tools can concretely support
+              practitioners in evolving their libraries and managing their
+              dependencies. Finally, we will highlight research directions for
+              building more sustainable and resilient software ecosystems.
+            </p>
+            <!-- <h4>Biography</h4>
+            <p class="text-justify">X</p> -->
+            </div>
+        </div>
+        </div>
+    </div>
+  </div>
+</section>
 <section id="program">
   <div class="container">
     <h2>Programme</h2>
@@ -178,7 +328,7 @@
           </a>
         </div>
       </div>
-      <div class="row">
+      <!-- <div class="row">
         
         <div class="card">
           <a href="https://example.com" target="_blank">
@@ -202,7 +352,7 @@
             </p>
           </a>
         </div>
-      </div>
+      </div> -->
       <div class="row">
         <div class="card">
           <a href="https://servicios.urjc.es/pdi/ver/gregorio.robles" target="_blank">
