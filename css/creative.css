@@ -1167,6 +1167,7 @@ table.sch table.sch {
 
 table.sch table.sch td:first-child {
   padding-left: 0.75em;
+  padding-right: 1em;
 }
 
 table.sch table.sch td:last-child {
